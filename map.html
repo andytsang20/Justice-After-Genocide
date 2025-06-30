@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map of Nazi Trial Locations</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+    }
+    #map {
+      height: 90vh;
+      width: 100%;
+    }
+    header, nav {
+      background-color: #2f2f2f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Justice After Genocide</h1>
+    <h2>Map of Nazi Trial Sites</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="trials.html">Trials</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="media.html">Media</a>
+    <a href="map.html">Map</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Initialize map
+    var map = L.map('map').setView([50.1109, 8.6821], 5); // Centered in Germany
+
+    // Add base map tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add markers for trial locations
+    L.marker([50.1115, 8.6821]).addTo(map)
+      .bindPopup('<b>Frankfurt Auschwitz Trial</b><br>1963–1965');
+
+    L.marker([52.5200, 13.4050]).addTo(map)
+      .bindPopup('<b>Berlin (Nazi documentation, GDR courts)</b>');
+
+    L.marker([51.3397, 12.3731]).addTo(map)
+      .bindPopup('<b>Leipzig</b><br>People’s Courts (GDR)');
+
+    L.marker([50.0647, 19.9450]).addTo(map)
+      .bindPopup('<b>Kraków Trial</b><br>SS at Auschwitz, 1947');
+
+    L.marker([49.4444, 11.8639]).addTo(map)
+      .bindPopup('<b>Nuremberg Trials</b><br>1945–1949');
+  </script>
+
+<footer>
+    &copy; 2025 Hin Lam Tsang. All rights reserved. | A digital history project.
+  </footer>
+  
+</body>
+</html>
