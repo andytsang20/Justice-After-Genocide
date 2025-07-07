@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nazi Trials | Justice After Genocide</title>
+  <title>Media | Justice After Genocide</title>
   <style>
     body {
       margin: 0;
@@ -32,48 +32,44 @@
       margin: 2rem auto;
       padding: 1rem;
     }
-    .introduction, .trial, .comparison {
+    .media-section {
       background: white;
       border-left: 4px solid #555;
       margin-bottom: 2rem;
       padding: 1rem;
       box-shadow: 0 0 6px rgba(0,0,0,0.1);
     }
-    .trial h3, .comparison h3, .introduction h3 {
+    .media-section h3 {
       margin-top: 0;
       color: #333;
     }
-    table {
+    iframe, video, img {
       width: 100%;
-      border-collapse: collapse;
+      height: auto;
+      border-radius: 4px;
       margin-top: 1rem;
-    }
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-    th, td {
-      padding: 0.5rem;
-      text-align: left;
     }
   </style>
 </head>
 <body>
-  <header>
-     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;"> <div style="flex: 0 0 auto;"> <img src="images/logo.png" alt="Project Logo" style="height: 60px; margin-right: 1rem;"> </div> <div style="text-align: right;"> <h1 style="margin: 0;">Justice After Genocide</h1> <h2 style="margin: 0; font-size: 1rem;">Nazi Trials in Divided Germany</h2> </div> </div> 
-  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="timeline.html">Timeline</a>
-    <a href="trials.html">Trials</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="media.html">Media</a>
-    <a href="map.html">Map</a>
-    <a href="about.html">About</a>
-  </nav>
+<header>
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;"> <div style="flex: 0 0 auto;"> <img src="images/logo.png" alt="Project Logo" style="height: 60px; margin-right: 1rem;"> </div> <div style="text-align: right;"> <h1 style="margin: 0;">Justice After Genocide</h1> <h2 style="margin: 0; font-size: 1rem;">Nazi Trials in Divided Germany</h2> </div> </div>
+</header>
 
-  <main>
-    <div class="introduction">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="timeline.html">Timeline</a>
+  <a href="trials.html">Trials</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="media.html">Media</a>
+  <a href="map.html">Map</a>
+  <a href="about.html">About</a>
+</nav>
+
+<main>
+
+  <div class="media-section">
     <h3>Introduction</h3>
     <p>This media page provides a curated selection of visual and video resources that enhance the understanding of key Nazi trials. These materials support the historical and legal context of the proceedings, offering a glimpse into the judicial processes and public narratives of the time.</p>
   </div>
@@ -91,11 +87,19 @@
   </div>
 
   <div class="media-section">
+    <h3>Historical Photographs</h3>
+    <p>These images document the courtroom settings, key defendants, and judicial staff involved in the Nuremberg and later Nazi trials.</p>
+    <img src="images/courtroom-photo.jpg" alt="Courtroom Photo">
+    <img src="images/defendants.jpg" alt="Defendants in Trial">
+  </div>
+
+  <div class="media-section">
     <h3>Poster: "Wenn Fischer kam, kam der Tod" (1966)</h3>
     <p>This GDR propaganda poster, meaning "When Fischer came, death followed," was part of the state’s effort to promote public awareness and condemnation of Nazi crimes through mass education forums.</p>
     <img src="images/poster-fischer.jpg" alt="Fischer Trial Poster">
   </div>
-  </main>
+
+</main>
 
   <footer>
     &copy; 2025 Hin Lam Tsang. All rights reserved. | A digital history project.
