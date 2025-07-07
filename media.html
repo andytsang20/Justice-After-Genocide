@@ -45,16 +45,28 @@
     }
     iframe, video, img {
       width: 100%;
-      height: auto;
       border-radius: 4px;
       margin-top: 1rem;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;"> <div style="flex: 0 0 auto;"> <img src="images/logo.png" alt="Project Logo" style="height: 60px; margin-right: 1rem;"> </div> <div style="text-align: right;"> <h1 style="margin: 0;">Justice After Genocide</h1> <h2 style="margin: 0; font-size: 1rem;">Nazi Trials in Divided Germany</h2> </div> </div>
+   <div style="display: flex; align-items: center; justify-content: space-between;"> <div> <img src="images/logo.png" alt="Project Logo" style="height: 60px; vertical-align: middle;"> </div> <div style="text-align: right;"> <h1 style="margin: 0;">Justice After Genocide</h1> <h2 style="margin: 0; font-size: 1rem;">Nazi Trials in Divided Germany</h2> </div> </div>
 </header>
 
 <nav>
@@ -77,20 +89,17 @@
   <div class="media-section">
     <h3>Documentary: The Auschwitz Trial (Frankfurt, 1963–1965)</h3>
     <p>This documentary footage captures the courtroom atmosphere of the Frankfurt Auschwitz Trial, highlighting testimonies, evidence, and public reactions during the proceedings.</p>
-    <iframe src="https://www.youtube.com/embed/uwcjf1JGMxk" title="Auschwitz Trial Documentary" frameborder="0" allowfullscreen></iframe>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/uwcjf1JGMxk" title="Auschwitz Trial Documentary" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 
   <div class="media-section">
     <h3>News Footage: Horst Fischer Trial (1965)</h3>
     <p>Archival footage from East German television showcasing the trial of SS doctor Horst Fischer, including official commentary and ideological framing used in the GDR.</p>
-    <iframe src="https://www.youtube.com/embed/aC_TUoMWlzE" title="Horst Fischer Trial News" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <div class="media-section">
-    <h3>Historical Photographs</h3>
-    <p>These images document the courtroom settings, key defendants, and judicial staff involved in the Nuremberg and later Nazi trials.</p>
-    <img src="images/courtroom-photo.jpg" alt="Courtroom Photo">
-    <img src="images/defendants.jpg" alt="Defendants in Trial">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/aC_TUoMWlzE" title="Horst Fischer Trial News" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 
   <div class="media-section">
@@ -101,9 +110,11 @@
 
 </main>
 
-  <footer>
-    &copy; 2025 Hin Lam Tsang. All rights reserved. | A digital history project.
-     </footer>
+<footer>
+  &copy; 2025 Hin Lam Tsang. All rights reserved. | A digital history project.
+</footer>
+
 </body>
 </html>
+
 
