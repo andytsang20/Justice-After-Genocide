@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Media | Justice After Genocide</title>
   <style>
     body {
       margin: 0;
       font-family: Georgia, serif;
-      background-color: #f9f9f9;
+      background-color: #f5f5f5;
+      color: #222;
     }
-    header, nav, footer {
+    header {
       background-color: #2f2f2f;
       color: white;
-      padding: 1.5rem;
-      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .logo-box {
+      flex: 0 0 auto;
+    }
+    .site-logo {
+      height: 120px;
+      margin-right: 1rem;
+    }
+    .title-box {
+      text-align: right;
+    }
+    .title-box h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: white;
+    }
+    .title-box h2 {
+      margin: 0;
+      font-size: 1rem;
+      color: white;
+      font-weight: normal;
     }
     nav {
       background: #444;
+      text-align: center;
+      padding: 1rem;
     }
     nav a {
       color: white;
-      margin: 0 1rem;
       text-decoration: none;
+      margin: 0 1rem;
     }
     nav a:hover {
       text-decoration: underline;
@@ -37,7 +69,7 @@
       border-left: 4px solid #555;
       margin-bottom: 2rem;
       padding: 1rem;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     }
     .media-section h3 {
       margin-top: 0;
@@ -64,16 +96,24 @@
     footer {
       font-size: 0.8rem;
       color: #ccc;
-      padding-top: 2rem;
+      text-align: center;
+      background-color: #2f2f2f;
+      padding: 2rem 1rem 1rem;
     }
   </style>
 </head>
 <body>
-
-<header>
-<h1>Justice After Genocide</h1>
-  <h2>Media Resources</h2>   
-</header>
+  <header>
+    <div class="header-container">
+      <div class="logo-box">
+        <img src="images/logo.png" alt="Project Logo" class="site-logo" />
+      </div>
+      <div class="title-box">
+        <h1>Justice After Genocide</h1>
+        <h2>Nazi Trials in Divided Germany</h2>
+      </div>
+    </div>
+  </header>
 
 <nav>
   <a href="index.html">Home</a>
